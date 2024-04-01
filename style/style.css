@@ -1,0 +1,807 @@
+* {
+    margin: 0px;
+   /* внешний отступ */
+    padding: 0px;
+     /* внутренний отступ */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* шрифт */
+}
+
+/* Шапка */
+.header {
+    padding: 10px 40px;
+    display: flex;
+    /* гибкий блок */
+    justify-content: space-between;
+    /*выравнивание по оси х элементы по краям страницы */
+    align-items: center;
+    /* по оси у элементы выравниваются по центру блока*/
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    /* размер шрифта */
+    font-weight: 500;
+    /* толщина текста */
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Главная часть */
+/* Название блока */
+.m1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    /* высота блока */
+    background-image: url(../images/bg1.jpg);
+    /* изображение на фон */
+    background-size: cover;
+    /* изображение не меняет размер */
+    color: white;
+    text-align: center;
+}
+
+.main1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 560px;
+    height: auto;
+}
+
+.main1 h1 {
+    font-size: 45px;
+    font-weight: 650;
+}
+
+.btn1 {
+    color: white;
+    /* цвет текста */
+    background-color: #53258b;
+    /* цвет фона */
+    border: none;
+    /* рамки нет */
+    border-radius: 38px;
+    /* скругление рамки */
+    padding: 19px 58px 19px 58px;
+    font-weight: 650;
+
+}
+
+.btn1:hover {
+    transition: 0.5s;
+    /* длительность анимации */
+    background-color: white;
+    color: #53258b;
+}
+
+/* О сайте */
+.about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 140px;
+    /* расстояние между элеентами гибкого блока */
+    margin-top: 50px;
+}
+
+.ab p {
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 1.7em;
+    /* междустрочный интервал */
+    width: 510px;
+    height: auto;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.man {
+    width: 320px;
+    height: auto;
+}
+
+/* Карточки */
+.cards {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.texth2 h2 {
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+.card h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.card {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    /* элемент переносится на новую строку */
+}
+
+.card1 {
+    width: 300px;
+    height: auto;
+}
+
+.card1 p {
+    line-height: 1.7em;
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.phone {
+    width: 100px;
+    height: auto;
+}
+
+.clock {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.grafic {
+    width: 100px;
+    height: auto;
+}
+
+/* Кнопки */
+.text1btn h2 {
+    text-align: center;
+    margin-top: 120px;
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    /* элементы выстраиваются в колонку */
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.btn2 {
+    text-align: center;
+    color: white;
+    background-color: #53258b;
+    border: none;
+    border-radius: 38px;
+    width: 650px;
+    padding: 16px 100px 16px 100px;
+    font-weight: 650;
+    margin-bottom: 15px;
+}
+
+.btn2 p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn2:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: #53258b;
+}
+
+/* Проектная работа */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.work1 {
+    width: 900px;
+    margin-bottom: 80px;
+}
+
+.work1 h2 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.work1 p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 330;
+    text-align: left;
+}
+
+.work1 a {
+    text-decoration: underline;
+    font-style: italic;
+    color: #53258b;
+    font-weight: bold;
+}
+
+/* Кнопка с ссылкой на темы для проекта */
+.btnbot {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn3 {
+    text-align: center;
+    color: white;
+    background-color: #53258b;
+    border: none;
+    border-radius: 30px;
+    width: 650px;
+    padding: 16px 100px 16px 100px;
+    font-weight: 650;
+    margin-bottom: 15px;
+}
+
+.btn3 p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn3:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: #53258b;
+}
+
+/* Подвал */
+footer {
+    background-color: #ebebeb;
+    width: 100%;
+    height: 150px;
+}
+
+.ulfooter {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+    font-weight: 600;
+}
+
+.df {
+    padding-top: 40px;
+    color: #6d6a6a;
+}
+
+.company {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 11px;
+    color: #6d6a6a;
+}
+
+.ulfooter a {
+    text-decoration: none;
+    color: #6d6a6a;
+}
+
+
+/* страница лекции */
+.m2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    background-image: url(/images/bg2.png);
+    background-size: cover;
+}
+
+.main2 h1 {
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+
+}
+
+/* блок со списком всех лекций */
+.block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.ccvidio {
+    margin-top: 20px;
+    background-color: #4a4747;
+    width: 50%;
+    margin-left: 24%;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.ccvidio img{
+    width: 35px;
+    height: auto;
+    position: absolute;
+    left: 48.5%;
+}
+
+.block1 {
+    width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.l1 {
+    width: 120px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    height: 35px;
+    background-color: #4a4747;
+}
+
+.l2 {
+    width: 160px;
+    margin-top: 10px;
+    text-align: center;
+    padding-top: 5px;
+    height: 35px;
+    background-color: #4a4747;
+}
+
+.block p {
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+
+}
+
+.block1 h2 {
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+hr {
+    width: 50%;
+    margin-left: 24%;
+    margin-top: 30px;
+}
+
+.notes {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.notes p {
+    width: 60%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 17px;
+    font-weight: 350;
+    line-height: 1.7em;
+}
+
+.btn4 {
+    text-align: center;
+    color: white;
+    background-color: #53258b;
+    border: none;
+    border-radius: 38px;
+    width: 550px;
+    padding: 10px 70px 10px 70px;
+    font-weight: 650;
+}
+
+.btnd4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.btn4 p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn4:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: #53258b;
+}
+
+.block a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Блоки 3, 9*/
+.block2 {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.block2 h2 {
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+/* Блоки 4, 6, 7, 8, 10, 12*/
+.block3 {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.block3 h2 {
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.notes3 {
+    width: 100%;
+    height: 300px;
+    text-align: start;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notes3 p {
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 350;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+/* Блок 5 */
+.block4 {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.block4 h2 {
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+
+.notes4 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.notes4 p {
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 350;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+.notes4 ul {
+    width: 38%;
+    text-align: left;
+    font-weight: 330;
+}
+
+/* страница видеолекциии */
+/* блок со списком всех видеолекций */
+.m3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    background-image: url(/images/bg3.png);
+    background-size: cover;
+}
+
+.main3 h1 {
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+
+.video {
+    border-radius: 30px;
+    border: none;
+    background-color: #4a4747;
+    padding: 8px 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 370;
+}
+
+.vidbl {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.vidtext {
+    margin-top: 20px;
+    font-weight: 350;
+}
+
+.hr1 {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 30px;
+}
+
+.hr2 {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.vidbl a {
+    text-decoration: none;
+    color: black;
+}
+
+/* страница структура */
+.m4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    background-image: url(/images/bg4.jpg);
+    background-size: cover;
+}
+
+.main4 h1 {
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+
+.struct {
+    width: 100%;
+}
+
+.women {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 160px;
+    gap: 30px;
+    align-items: center;
+}
+
+.textstruct {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 350;
+    font-size: 17px;
+    line-height: 1.7em;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.textstruct ul {
+    margin-left: 20px;
+}
+
+/* Блок структуры проекта */
+.referat {
+    background-color: #ebebeb;
+}
+
+/* Блок титульный лист, блок содержание, блок заключение, блок список используемых источников */
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 185px;
+    gap: 55px;
+}
+
+.titletext {
+    width: 45%;
+}
+
+.titletext h2 {
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+.titletext p {
+    font-weight: 350;
+    margin-bottom: 8px;
+    line-height: 1.6em;
+    font-size: 14px;
+}
+
+.titletext ol {
+    font-weight: 350;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6em;
+    font-size: 14px;
+}
+
+/* Блок введение */
+.titletext ul {
+    font-weight: 350;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    line-height: 1.6em;
+    font-size: 14px;
+}
+
+/* Страница темы */
+.m5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    background-image: url(/images/bg5.jpg);
+    background-size: cover;
+}
+
+.main5 h1 {
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+
+/* перечень тем */
+.m5text {
+    text-align: center;
+    width: 46%;
+    margin-left: 27%;
+}
+
+.m5text h3 {
+    font-size: 17px;
+    line-height: 1.7em;
+    font-weight: 650;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.m5text p {
+    font-size: 17px;
+    font-weight: 350;
+    margin-bottom: 30px;
+}
+
+.line {
+    margin-top: 25px;
+}
+/* страница Задай вопрос преподавателю */
+.m6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+    background-image: url(/images/bg6.png);
+    background-size: cover;
+}
+
+.main6 h1 {
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+.h2form{
+    text-align: center;
+    margin-top: 100px;
+}
+.h2form h2{
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 70px;
+}
+.form{
+    width: 640px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid #4a4747;
+}
+.form1{
+    width: 640px;
+    height: 100px;
+    border-radius: 15px;
+    border: 1px solid #4a4747;
+}
+.sendto{
+    color: white;
+    background-color: #53258b;
+    border: none;
+    border-radius: 38px;
+    width: 60px;
+    padding: 16px 150px 16px 80px;
+    font-weight: 650;
+}
+.forms p{
+    font-size: 11px;
+    font-weight: 200;
+}
+.qizz{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 150px;
+}
